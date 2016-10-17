@@ -1,0 +1,12 @@
+<main>
+  <form novalidate
+    ng-submit="loginCtrl.login()">
+    <label for="username">Username:</label>
+    <input type="text" name="username" ng-model="loginCtrl.user.username">
+    <label for="password">Password:</label>
+    <input type="password" name="password" ng-model="loginCtrl.user.password">
+    <input type="submit" value="login">
+  </form>
+  <p> not a user? </p>
+  <a href="/#signup"> Sign Up </a>
+</main>

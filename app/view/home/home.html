@@ -1,0 +1,26 @@
+<main>
+  <create-gallery-form done="homeCtrl.selectGallery(homeCtrl.userGalleries[0])"></create-gallery-form>
+  <upload-pic-form gallery="homeCtrl.currentGallery"></upload-pic-form>
+
+  <button ng-click="homeCtrl.logout()"> 
+    sign out
+    <i class="fa fa-sign-out"></i>
+  </button>
+
+  <section>
+    <h2> Gallerys </h2>
+    <ul>
+      <gallery-li 
+        ng-repeat="item in homeCtrl.userGalleries" 
+        gallery="item"
+        select="homeCtrl.selectGallery(gallery)" 
+        done-delete="homeCtrl.deleteGallery(gallery)"> 
+      </gallery-li>
+    </ul>
+  </section>
+
+  <section>
+    <h2> {{homeCtrl.currentGallery.name}}</h2>
+    <thumbnail ng-repeat="item in homeCtrl.currentGallery.pics" gallery="homeCtrl.currentGallery" pic="item"> </thumbnail>
+  </section>
+</main>
