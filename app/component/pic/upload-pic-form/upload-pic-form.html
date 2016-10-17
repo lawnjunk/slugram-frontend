@@ -1,0 +1,15 @@
+<div>
+  <form
+    name="lulwat"
+    ng-submit="uploadPicFormCtrl.uploadPic(lulwat.files)"
+    novalidate>
+    <label for="name"> Name:</label>
+    <input type="text" name="name" ng-model="uploadPicFormCtrl.pic.name">
+    <label for="desc"> Description:</label>
+    <input type="text" name="desc" ng-model="uploadPicFormCtrl.pic.desc">
+    <div class="button" ngf-select ng-model="uploadPicFormCtrl.pic.image" name="image">
+      Upload-Image
+    </div>
+    <input type="submit" value="^">
+  </form>
+</div>

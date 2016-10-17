@@ -1,0 +1,11 @@
+<div>
+  <form
+    novalidate
+    ng-submit="createGalleryFormCtrl.createGallery()">
+    <label for="name"> Name:</label>
+    <input type="text" name="name" ng-model="createGalleryFormCtrl.gallery.name">
+    <label for="desc"> Description:</label>
+    <input type="text" name="desc" ng-model="createGalleryFormCtrl.gallery.desc">
+    <input type="submit" value="+">
+  </form>
+</div>
