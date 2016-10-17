@@ -26,6 +26,9 @@ module.exports = {
     filename: 'bundle.js',
     path: `${__dirname}/build`,
   },
+  sassLoader: {
+    includePaths: [`${__dirname}/app/scss/lib`],
+  },
   module: {
     loaders: [
       {

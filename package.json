@@ -25,10 +25,6 @@
     "form-data": "^2.1.1",
     "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.22.0",
-    "jasmine-core": "^2.5.2",
-    "karma": "^1.3.0",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-jasmine": "^1.0.2",
     "ng-file-model": "0.0.5",
     "ng-file-upload": "^12.2.12",
     "node-sass": "^3.10.1",
@@ -38,10 +34,14 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.2"
+    "dotenv": "^2.0.0",
+    "webpack": "^1.13.2"
   },
   "devDependencies": {
-    "dotenv": "^2.0.0"
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.3.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "webpack-dev-server": "^1.16.2"
   }
 }
